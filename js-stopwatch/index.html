@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+
+            <h2>This is a Vanilla JavaScript</h2>
+            <h1>Stopwatch!</h1>
+        </div>
+        <p id="display"><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="ms">00</span>
+            <span class="display-desc desc">The display is made of three spans</span>
+            <span class="minutes-desc desc ">minutes<br> span</span>
+            <span class="seconds-desc desc">seconds <br>
+            span</span>
+            <span class="ms-desc desc"> ms <br>span</span>
+        </p>
+        
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+            <span class="start-desc desc"> The 'Start' button calls the startTimer() function<br>
+            which updates the spans every 100ms<br>by being wrapped in a setInterval.</span>
+            <span class="stop-desc desc"> The 'Stop' and 'Reset' buttons have a clearInterval<br>
+            that references the setInterval set by the 'Start' button.<br>Additionally, the 'Reset' button resets the values of the spans.</span>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
