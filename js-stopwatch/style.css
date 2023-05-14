@@ -16,7 +16,7 @@
 }
 
 body {
-    background: radial-gradient(goldenrod, orange);
+    background:radial-gradient(rgb(182, 53, 207), rgb(134, 49, 168));
     background-repeat: no-repeat;
     min-height: 100vh;
     color: #fff;
@@ -26,6 +26,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+
 }
 
 .title {
@@ -141,3 +142,16 @@ button:active {
     text-align: center;
     line-height: 12px;
 }
+
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: 200ms;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: .6;
+}
+a:hover{
+opacity: 1;}
+
