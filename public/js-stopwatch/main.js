@@ -13,7 +13,7 @@ const minutesDisplay = document.getElementById('minutes')
 
 startBtn.onclick = function () {
     clearInterval(intervalRef)
-    intervalRef = setInterval(startTimer, 100);
+    intervalRef = setInterval(startTimer, 10);
 
 }
 
