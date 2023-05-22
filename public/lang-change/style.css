@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.abs{
+    position: absolute;
+    color: black;
+    top: 20px;
+    left: 0;
+    z-index: 10;
+}
+body{
+    min-height: 100vh;
+    background: radial-gradient(rgb(243, 239, 255), rgb(216, 216, 255));
+    font-family: Poppins;
+}
+
+.nav-container{
+    width: 100%;
+    padding: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    z-index: 5;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 640px;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /* border: 1px solid red; */
+    /* width: 150px; */
+    margin: 0 1rem;
+    text-align: center;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.lang-container{
+    width: 120px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid lightcoral; */
+    color: #fff;
+
+}
+
+.lang-option-div.active{
+    background-color: #444;
+
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    /* border: 1px solid red; */
+    transition: 200ms;
+    user-select: none;
+    z-index: 3;
+
+}
+.img-format{
+    width: 30px;
+    transition: 300ms;
+}
+
+.lang-options-container{
+    opacity: 0;
+    transform: translateY(-60px);
+    display: grid;
+    grid-template-rows: 0fr;
+    width: 120px;
+    color: #222;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    user-select: none;
+    bottom: -100%;
+    /* border: 1px solid red; */
+    transition:200ms;
+
+}
+
+.lang-options-container.is-active{
+    opacity: 1;
+    grid-template-rows: 1fr;
+    transform: translateY(0px);
+
+}
+.inner{
+    overflow: hidden;
+}
+.lang-option-div.option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: .8rem;
+    overflow: hidden;
+    padding: 1rem;
+    transition: 300ms;
+}
+
+.lang-container:hover{
+    background-color: #3a3a3a;
+}
+.lang-option-div.active p{
+    transition: 200ms;
+}
+.lang-option-div.active:active p{
+    rotate: 5deg;
+    transform: translate(-1px, 1px);
+}
+
+.lang-option-div.active:active .img-format{
+    rotate: -25deg;
+}
+
+.lang-option-div:hover{
+    color: #fff;
+    background-color: #444;
+}
+
+.lang-option-div:active{
+ background-color: #222;    
+}
+
+
+/* ///////////////////////////////////////// */
+
+.title-section{
+     /* border: 1px solid red; */
+     height: 20rem;
+     padding-top: 8rem;
+     text-align: center;
+     color: #555;
+}
+
+.abt-section, .project-section{
+     color: #555;
+     text-align: center;
+     /* border: 1px solid red; */
+     margin: 2rem auto;
+}
+
+h1{
+    /* border: 1px solid red; */
+    font-size: 32px;
+    text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.5);
+}
+
+.text, .project-text{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p, .project-section p {
+    width: 700px;
+    line-height: 35px;
+}

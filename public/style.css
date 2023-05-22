@@ -20,6 +20,8 @@ body{
 .container{
     /* border: 1px solid red; */
     padding: 1rem;
+    display: flex;
+    gap: 2rem;
 }
 
 .project{
@@ -27,8 +29,14 @@ body{
     padding: 2rem;
     background:radial-gradient(rgb(185, 47, 212), rgba(111, 40, 139, 0.692));
     transition: 200ms;
+    display: flex;
 }
-
+.project2{
+    padding: 2rem;
+    background:radial-gradient(rgb(47, 132, 212), rgba(40, 42, 139, 0.692));
+    transition: 200ms;
+    display: flex;
+}
 a{
     text-decoration: none;
     color: #fff;
